@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(255, 230, 249);
+}
+
+header {
+    background-color:#770550;
+    color: white;
+    padding: 7px;
+    text-align: center;
+}
+header h1{
+    font-size: 28px;
+    font-weight: 800;
+}
+main {
+    padding: 2rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    color: #770550;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #770550;
+    color: white;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: #770550;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #e661b7;
+    color: #000;
+}

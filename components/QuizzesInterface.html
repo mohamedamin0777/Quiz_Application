@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzes Category</title>
+    <link rel="shortcut icon" href="../assets/Images/quiz.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/Quizzes Interface.css" />
+  </head>
+  <body>
+    <style>
+      a{
+        text-decoration: none;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        
+      }
+    </style>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="logo" href="#">My Quiz</a></li>
+          <li><a href="../components/internalHome.html">Back to Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search-filter-container">
+      <input type="text" class="form-control" id="search-input" placeholder="Search quizzes..." />
+      <select class="form-control" id="filter-select">
+        <option value="all">Select Category</option>
+      </select>
+    </div>
+
+    <main id="quizzes-container"></main>
+    <footer>
+      <p>&copy; 2024 My Quiz. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="../Src/QuizCard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="../assets/Images/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/LogAndResg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/RegisterUser.css"> -->
+</head>
+<body>
+  <style>
+    a{
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+    }
+  </style>
+  <nav>
+
+    <div class="containeree">
+
+        <div class="logo">
+            <h1><a href="#">My Quizz</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../components/homepage.html" >Home</a></li>
+            <li><a href="../components/AboutUs.html">About</a></li>
+            <li><a href="../components/ContactUs.html">Contact us</a></li>
+            <li class="login"><a href="../components/LoginUser.html">Login</a></li>
+            <li class="SignUP"><a class="activee" href="../components/RegisterUser.html">Sign UP</a></li>
+        </ul>
+
+    </div>
+</nav>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+          <div class="front">
+            <img src="../assets/Images/frontImg.jpg" alt="">
+            <div class="text">
+              <span class="text-1">Getting start with MyQuiz Application</span>
+              <span class="text-2">Let's shape the world</span>
+            </div>
+          </div>
+          <div class="back">
+            <img class="backImg" src="../assets/Images/backImg.jpg" alt="">
+            <div class="text">
+              <span class="text-1">Complete miles of journey <br> with one step</span>
+              <span class="text-2">Let's get started</span>
+            </div>
+          </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+            
+            <div class="signup-form">
+              <div class="title">Signup</div>
+            <form id="form" >
+                <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Enter your name" required>
+                    <div class="error"></div>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="useremail" placeholder="Enter your email" required>
+                    <div class="error"></div>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="userpassword" placeholder="Enter your password" required>
+                    <div class="error"></div>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="Confirmpassword" placeholder="Confirm Password" required>
+                    <div class="error"></div>
+                  </div>
+                  <div class="button input-box">
+                    <button id="submit-btn" type="button" >Sign UP</button>
+                  </div>
+                  <div class="text sign-up-text">Already have an account? <a href="../components/LoginUser.html">Login now</a> </div>
+                </div>
+          </form>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+  
+   <script type="module" src="../Src/RegisterUser.js"></script>
+</body>
+</html>

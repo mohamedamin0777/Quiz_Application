@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../assets/Images/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/LogAndResg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/RegisterUser.css"> -->
+</head>
+<body>
+  <style>
+    a{
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+    }
+  </style>
+  <nav>
+
+    <div class="containeree">
+
+        <div class="logo">
+            <h1><a href="#">My Quizz</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../components/homepage.html" class="activee">Home</a></li>
+            <li><a href="../components/AboutUs.html">About</a></li>
+            <li><a href="../components/ContactUs.html">Contact us</a></li>
+            <li class="login"><a href="../components/LoginUser.html">Login</a></li>
+            <li class="SignUP"><a href="../components/RegisterUser.html">Sign UP</a></li>
+        </ul>
+
+    </div>
+</nav>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+          <div class="front">
+            <img src="../assets/Images/frontImg.jpg" alt="">
+            <div class="text">
+              <span class="text-1">Let's go inside the quiz world <br> new adventure</span>
+              <span class="text-2">your right place to grow up</span>
+            </div>
+          </div>
+          <div class="back">
+            <img class="backImg" src="../assets/Images/backImg.jpg" alt="">
+            <div class="text">
+              <span class="text-1">Welcome in MyQuiz Application</span>
+              <span class="text-2">Let's get started</span>
+            </div>
+          </div>
+        </div>
+        <div class="forms ">
+            <div class="form-content">
+              <div class="login-form">
+                <div class="title">Login</div>
+              <form action="" id="form1">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="userLemail" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="userLpassword" placeholder="Enter your password" required>
+                  </div>
+                  <div class="text"><a href="#">Forgot password?</a></div>
+                  <div class="button input-box">
+                    <button class="login" id="login"type="button" >Login</button>
+                  </div>
+                  <div class="text sign-up-text">Don't have an account? <a href="../components/RegisterUser.html">Sigup now</a></div>
+                </div>
+            </form>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+    <script type="module" src="../Src/login.js"></script>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/LoginUser.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <form action="" id="form">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                <h1>Welcome Back</h1>
+                <br>
+                
+                <div class="box">
+                    <label for="useremail">User Email</label>
+                    <input type="text"  name="useremail" id="useremail" placeholder="Enter Your Email">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="userpassword">Password</label>
+                    <input type="password" name="userpassword" id="userpassword" placeholder="Enter Your password">
+                   
+                </div >
+                <div class="buttons">
+                    <button id="login"type="button" >Login</button>
+                    <button type="reset" >Reset</button>
+                </div>
+                
+                <div class="loginlink"><a href="RegisterUser.html" class="link">Don't have an account? Create One</a></div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <script type="module" src="../Src/login.js"></script>
+    
+
+</body>
+</html> -->

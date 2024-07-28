@@ -1,0 +1,98 @@
+/* Start Nav */
+nav {
+    background-color:#770550;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    color: #fff;
+  }
+  nav .containeree {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  nav .logo a::after {
+    content: ".";
+    color: #f592dc;
+  }
+  nav .nav-links {
+    display: flex;
+    font-weight: 600;
+    margin-left: 200px;
+  }
+  nav .nav-links .login{
+    margin-left: 200px;
+  }
+  .SignUP{
+    right: 10px;
+    padding-left: 0 10px;
+  }
+  nav .nav-links li a {
+    color: #fff;
+    font-size: 17px;
+    margin-right: 30px;
+    padding-bottom: 5px;
+    position: relative;
+    transition: var(--animation-duration);
+  }
+  nav .nav-links li a:hover,
+  nav .nav-links li a.activee {
+    color: #f592dc;
+  }
+  nav .nav-links li a::before,
+  nav .nav-links li a.activee::before {
+    content: "";
+    background-color: #770550;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: var(--animation-duration);
+  }
+  nav .nav-links li a:hover::before,
+  nav .nav-links li a.activee::before {
+    width: 100%;
+  }
+  nav .menus i {
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav .menus {
+    display: flex;
+    gap: 20px;
+  }
+  nav .menus .menu {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    nav .menus .menu {
+      display: block;
+    }
+    nav .nav-links {
+      display: none;
+    }
+    nav .nav-links .login {
+      margin-left: 0;
+    }
+    nav .nav-links.activee {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+    }
+    nav .nav-links li {
+      padding: 15px;
+    }
+  }
+  

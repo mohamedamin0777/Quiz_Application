@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../assets/Images/slider5.jpg");
+    background-size: cover;
+}
+.container{
+   margin-top:50px  ;
+ 
+    
+}
+.form-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    padding: 10px;
+    
+}
+#quizForm{
+    height: 80%;
+    width: 100%;
+    
+}
+
+.hidden {
+    display: none;
+}
+#questionsContainer {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background: #f8f9fa;
+}
+.form-group input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #770550;
+    margin: 10px 0;
+    background: none;
+    font-size: 15px;
+}
+.form-group{
+    padding: 15px 5;
+}
+.form-group:first-child{
+    margin-top:4em ;
+}
+.head h2{
+    color: rgb(252, 252, 252);
+    background-color: #770550;
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+}
+.head{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    
+}
+#quizForm .btn,#questionForms .btn {
+    background-color: #770550;
+    color: #fff;
+}
+.form-group input::placeholder {
+    color: rgb(63, 2, 45);
+    opacity: 1;
+  }
+  a:link,
+  a:visited,
+  a:hover {
+      text-decoration: none;
+      color:#fff; /* Make sure the color does not change on hover */
+  }

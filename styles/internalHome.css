@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/images/IMG-20240625-WA0108.jpg');
+    background-size: cover;
+}
+nav{
+  background-color: #770550 !important;
+  color: #fff;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+}
+.fa-solid{
+    padding-right: 10px;
+}
+
+nav ul{
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav .navitem{
+margin-top: 10px;
+font-size: 17px;
+font-weight: 700;
+}
+nav .navitem:hover{
+    color: violet;
+    
+}
+.card h2{
+    color:#770550;
+    font-weight: 700;
+    font-size: 24px
+}
+.table thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table tbody tr td a {
+    color: black;
+    font-weight: bold;
+}
+
+.table tbody tr td a:hover {
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color:#fff; 
+}
+ul .logo {
+    color: rgb(8, 0, 8);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* /////////////////////////////////// */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="shortcut icon" href="../assets/Images/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/CreateQuiz.css">
+    <link rel="stylesheet" href="../styles/userInfo.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: rgb(85, 1, 85);">
+    <nav class="navbar navbar-expand-lg" style="font-size: 30px; font-weight: 800px;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 30px; font-weight: 800px;">My Quiz</a>
+            <a class="back" href="../components/Dashboard.html"><i class="fa-solid fa-circle-arrow-left" style="font-size: 30px; font-weight: 800px;"></i>Back to dashboard</a>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="form-container">
+            <div class="head">
+                <h2 class="text-center">Create Quiz</h2>
+            </div>
+            <form id="quizForm">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="title" placeholder="Quiz Title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id="numQuestions" placeholder="Total Number of Questions"
+                        name="numQuestions" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id="marks" placeholder="Marks for Right Answer"
+                        name="marks" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id="minusMarks" placeholder="Minus Marks for Wrong Answer"
+                        name="minusMarks" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id="timeLimit"
+                        placeholder="Time Limit for Each Question (seconds)" name="timeLimit" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="category" placeholder="Category" name="category"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" id="description" placeholder="Description" name="description"
+                        required>
+                </div>
+
+                <button type="submit" class="btn btn-block">Create Quiz</button>
+            </form>
+
+        </div>
+
+        <div id="questionForms" class="form-container hidden">
+            <h2 class="text-center" style="background-color:rgb(168, 3, 173); color: aliceblue;padding: 10px;">Questions
+            </h2>
+            <div id="questionsContainer"></div>
+            <button id="submitQuestions" onclick="myREPage()" class="btn btn-block">Submit Questions</button>
+        </div>
+    </div>
+    <script>
+        function myREPage() {
+            setTimeout(() => {
+                window.location.href = "../components/Dashboard.html";
+            }, "1000");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+    <script type="module" src="../Src/CreateQuiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="../assets/Images/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/internalHome.css">
+    <script src="https://kit.fontawesome.com/e776d19aa9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Main Navbar-->
+    <nav>
+        <ul>
+            <li><a class="logo" href="../components/homepage.html">My Quiz</a></li>
+            <li><a class="navitem" href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a class="navitem" href="../components/userInfo.html"><i class="fa-solid fa-user"></i>My Profile</a></li>
+            <li><a class="navitem" href="../components/QuizzesInterface.html"><i class="fa-solid fa-pen"></i>Take a Quiz</a></li>
+            <li><a class="navitem" href="../components/homepage.html"><i class="fa-solid fa-user"></i>Sign Out</a></li>
+            <li>
+        </ul>
+    </nav>
+  
+    <div class="container mt-5">
+        <div class="card" style="text-align: center; justify-content: center;">
+            <h2>Your Quiz History</h2>
+        </div>
+        <table class="table table-striped" id="quiz-table">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Category</th>
+                    <th>Questions No.</th>
+                    <th>Score</th>
+                    <th>Result</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Quiz data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="../Src/internalhome.js"></script>
+</body>
+
+</html>
